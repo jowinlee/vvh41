@@ -17,7 +17,6 @@
 		"Art of Living and Health":"Art de vivre et santé",
 		"Travelling":"Voyages",
 		"Community and Education":"Communauté et éducation",
-
 		"Vacation":"Vacances",
 		"Product":"Produit",
 		"Barber Shop":"Salon de coiffure",
@@ -48,7 +47,6 @@
 		"Marketing Agency":"Agence de marketing",
 		"Local Restaurant":"Restaurant local",
 		"Boutique Law Firm":"Cabinet d'avocats boutique",
-
 		"Non-Profit Foundation":"รหัสไปรษณีย์",
 		"Home Decor":"เลขที่",
 		"Medical Clinic":"ชื่อถนน",
@@ -71,8 +69,7 @@
 		"Hair Salon":"รูปภาพสถานที่",
 	  	"Preschool": "http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/1280px-Flag_of_Thailand.svg.png",
 		"Empty Template": "http://www.yahoo.com/",
-		"Car Dealer" : "ตรงกันข้ามกับความเชื่อที่นิยมกัน Lorem Ipsum ไม่ได้เป็นเพียงแค่ชุดตัวอักษรที่สุ่มขึ้นมามั่วๆ แต่หากมีที่มาจากวรรณกรรมละตินคลาสสิกชิ้นหนึ่งในยุค  ...",
-		
+		"Car Dealer" : "ตรงกันข้ามกับความเชื่อที่นิยมกัน Lorem Ipsum ไม่ได้เป็นเพียงแค่ชุดตัวอักษรที่สุ่มขึ้นมามั่วๆ แต่หากมีที่มาจากวรรณกรรมละตินคลาสสิกชิ้นหนึ่งในยุค  ...",		
 		"Select":"Sélectionner"
 
 	},
