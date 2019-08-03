@@ -26,6 +26,8 @@
 
             getSSOLink($account,$siteName,'EDITOR');
 
+            // getResetPass($account);
+
             session_unset();
 
             die();

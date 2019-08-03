@@ -42,7 +42,6 @@
 
             session_unset();
 
-
             header('Location: https://createur.virtualvisiblehands.com');
 
             die();
