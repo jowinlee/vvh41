@@ -9,7 +9,7 @@
 		    	</a>
 		  	</div>
 		  	<div class="card-body">
-		    	<h5 class="card-title" lang="en">' . $template->template_name . '</h5>';?>
+		    	<h5 class="card-title">' . $template->template_name . '</h5>';?>
 		    	<?php
 		    		
 		    		$firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
@@ -23,7 +23,7 @@
 		    	?>
 		    	<form method="post" action="<?php echo $action; ?>">
                     <input type="text" name="template" id="template" hidden="hidden" value="<?php echo $template->template_id; ?>">
-                    <button type="submit" class="btn peach-gradient" lang="en">Select</button>
+                    <button type="submit" class="btn peach-gradient">Select</button>
                 </form><?php echo '
 		  	</div>
 		</div>

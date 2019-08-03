@@ -38,16 +38,14 @@
 
             $account = $email;
 
-            updateCustomerAccount($account,$firstname,$lastname);
-
             grantAccountAccess($account,$siteName);
-
-            getSSOLink($account,$siteName,'EDITOR');
 
             session_unset();
 
-            die();
 
+            header('Location: https://createur.virtualvisiblehands.com');
+
+            die();
         }
 
     }else{

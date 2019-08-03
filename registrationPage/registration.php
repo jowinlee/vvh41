@@ -33,6 +33,7 @@
             </div>
             <button class="btn btn-success btn-rounded btn-block my-4 z-depth-0" type="submit" id="regBtn">Proceed to Templates</button>             
         </form>
+        <p>Already has an account? <a href="">Login</a></p>
     </div>
 </div>
 <?php endif; ?>

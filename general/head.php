@@ -9,20 +9,6 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/mdb.min.css" rel="stylesheet">
         <link href="../css/styles.css" rel="stylesheet">
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script> -->
-        <script src="../js/js.cookie.js" charset="utf-8" type="text/javascript"></script>
-        <script src="../js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
-
-        <script type="text/javascript">
-        var lang = new Lang();
-        lang.dynamic('fr', '../js/langpack/fr.json');
-        lang.init({
-        defaultLang: 'en'
-        });
-        </script>
-
     </head>
     <body>
         
