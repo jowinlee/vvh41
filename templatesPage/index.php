@@ -35,51 +35,15 @@
                 <a class="list-group-item" data-toggle="tab" href="#folio" role="tab" aria-controls="folio" lang="en">Portfolio and CV</a>
                 <a class="list-group-item" data-toggle="tab" href="#art" role="tab" aria-controls="art" lang="en">Art of Living and Health</a>
                 <a class="list-group-item" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages" lang="en">Travelling</a>
+<!--            <a class="list-group-item" data-toggle="tab" href="#title" role="tab" aria-controls="title" lang="en">Title or question</a> -->
                 <a class="list-group-item" data-toggle="tab" href="#education" role="tab" aria-controls="education" lang="en">Community and Education</a>
                 <a class="list-group-item" data-toggle="tab" href="#blog" role="tab" aria-controls="blog">Blog</a>
       		</div>
     	</div>
               
     	<div id="page-content-wrapper">
-            <header>
-              <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                  <a class="navbar-brand" href="#">
-                    <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="mdb logo">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-center" id="basicExampleNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="virtualvisiblehands.com">Home</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="virtualvisiblehands.com">Services</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="virtualvisiblehands.com">Prices</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="virtualvisiblehands.com">Site Templates</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="virtualvisiblehands.com">Contact Us</a>
-                      </li>
-                      <li class="nav-item active">
-                        <a class="nav-link" href="virtualvisiblehands.com">SHOP NOW</a>
-                      </li>      
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                      <button class="btn vvh-orange rounded text-white my-2 my-sm-0" type="button"><strong>Create Free Acount</strong></button>
-                    </form>    
-                  </div>
-                </nav>
-              </div>
-            </header>
-            <main style="min-height: 592px;">
+
+            <main style="min-height: 592px; padding-top: 56px">
       		<div class="container-fluid text-center">
         		<h1 lang="en">Choose a template to start from</h1>
                 <p lang="en">Each template is natively responsive and can be fully customized to your liking.</p>
@@ -90,7 +54,7 @@
                 ?>
                 <div class="tab-pane active" id="all" role="tabpanel">
                 	<div class="container">
-                		<h2>All Templates</h2><hr>
+                		<h2 lang="en">All Templates</h2><hr>
                         <div class="row">
                     		<?php  
                                 foreach($templatesData as $template) {
@@ -102,7 +66,7 @@
                 </div>
                 <div class="tab-pane" id="enterprice" role="tabpanel">
                 	<div class="container">
-                		<h2>Enterprise</h2><hr>
+                		<h2 lang="en">Enterprise</h2><hr>
                 		<div class="row">
                 			<?php  
                                 foreach($templatesData as $template) {
@@ -116,7 +80,7 @@
                 </div>
                 <div class="tab-pane" id="destination" role="tabpanel">
                 	<div class="container">
-                		<h2>Page De Destination</h2><hr>
+                		<h2 lang="en">Landing Page</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -130,7 +94,7 @@
                 </div>
                 <div class="tab-pane" id="prof" role="tabpanel">
                 	<div class="container">
-                		<h2>Services Professionnels</h2><hr>
+                		<h2 lang="en">Professional Services</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -144,7 +108,7 @@
                 </div>
                 <div class="tab-pane" id="restau" role="tabpanel">
                 	<div class="container">
-                		<h2>Restauration Et Alimentation</h2><hr>
+                		<h2 lang="en">Food and Nutrition</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -158,7 +122,7 @@
                 </div>
                 <div class="tab-pane" id="vide" role="tabpanel">
                 	<div class="container">
-                		<h2>Vide</h2><hr>
+                		<h2 lang="en">Empty</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -172,7 +136,7 @@
                 </div>
                 <div class="tab-pane" id="boutique" role="tabpanel">
                 	<div class="container">
-                		<h2>Boutique En ligne</h2><hr>
+                		<h2 lang="en">Online Store</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -186,7 +150,7 @@
                 </div>
                 <div class="tab-pane" id="evenements" role="tabpanel">
                 	<div class="container">
-                		<h2>Événements</h2><hr>
+                		<h2 lang="en">Events</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -200,7 +164,7 @@
                 </div>
                 <div class="tab-pane" id="folio" role="tabpanel">
                 	<div class="container">
-                		<h2>Portfolio et CV</h2><hr>
+                		<h2 lang="en">Portfolio and CV</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -212,23 +176,23 @@
                 		</div>
                 	</div>
                 </div>
+                <div class="tab-pane" id="art" role="tabpanel"> 
+                    <div class="container"> 
+                        <h2 lang="en">Art of Living and Health</h2><hr> 
+                        <div class="row">   
+                            <?php   
+                                foreach($templatesData as $template) {  
+                                    if (in_array($template->template_id, array("1002716", "1002715","1003736","1009838","1031173","1029064","1075961"))){   
+                                            include('templateBlock.php');   
+                                    }   
+                                }   
+                            ?>  
+                        </div>  
+                    </div>  
+                </div>
                 <div class="tab-pane" id="voyages" role="tabpanel">
                 	<div class="container">
-                		<h2>Voyages</h2><hr>
-                		<div class="row">
-                			<?php
-                                foreach($templatesData as $template) {
-                                    if (in_array($template->template_id, array("1002716", "1002715","1003736","1009838","1031173","1029064","1075961"))){
-                                            include('templateBlock.php');
-                                    }
-                                }
-                            ?>
-                		</div>
-                	</div>
-                </div>
-                <div class="tab-pane" id="title" role="tabpanel">
-                	<div class="container">
-                		<h2>Title or question</h2><hr>
+                		<h2 lang="en">Travelling</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -240,9 +204,10 @@
                 		</div>
                 	</div>
                 </div>
+
                 <div class="tab-pane" id="education" role="tabpanel">
                 	<div class="container">
-                		<h2>Communauté et Education</h2><hr>
+                		<h2 lang="en">Community and Education</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -256,7 +221,7 @@
                 </div>
                 <div class="tab-pane" id="blog" role="tabpanel">
                 	<div class="container">
-                		<h2>Blog</h2><hr>
+                		<h2 lang="en">Blog</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
