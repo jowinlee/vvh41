@@ -17,8 +17,8 @@
                         <h5 class="card-header special-color white-text py-4" lang="en">Selected Template</h5>
                         <img class="card-img-top" src="'. $templatesData->thumbnail_url .'" alt="Selected Template">
                         <div class="card-body">
-                            <h4 class="card-title"><a>'. $templatesData->template_name .'</a></h4>
-                            <p class="card-text">This is your selected Template.</p>
+                            <h4 class="card-title" lang="en"><a>'. $templatesData->template_name .'</a></h4>
+                            <p class="card-text" lang="en">This is your selected Template.</p>
                         </div>
                     </div>';
                 ?>
