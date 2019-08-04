@@ -4,26 +4,26 @@
       	<div class="row">
       		<div class="col">
       			<img class="img-fluid mx-auto d-block vvh-logo1" src="../img/vvh4.png">
-      			<p class="text-center">We help leaders to attract 5 times more customers to get 3 times more call, visit and order, without them taking their umpteenth cap web designer and this in 3 months.</p>
+      			<p class="text-center" lang="en">We help leaders to attract 5 times more customers to get 3 times more call, visit and order, without them taking their umpteenth cap web designer and this in 3 months.</p>
       		</div>
       		<div class="col">
-      			<h3 class="text-uppercase mb-4">Information</h3>
+      			<h3 class="text-uppercase mb-4" lang="en">Information</h3>
       			<ul class="list-unstyled">
-      				<li>Home</li>
-      				<li>Services</li>
-      				<li>Site Templates</li>
-      				<li>Prices</li>
-      				<li>Request Quote</li>
+      				<li lang="en">Home</li>
+      				<li lang="en">Services</li>
+      				<li lang="en">Site Templates</li>
+      				<li lang="en">Prices</li>
+      				<li lang="en">Request Quote</li>
       			</ul>
       		</div>
       		<div class="col">
-      			<h3 class="text-uppercase mb-4">Contact us</h3>
+      			<h3 class="text-uppercase mb-4" lang="en">Contact us</h3>
       			<p>0630906774</p>
       			<p>contact@virtualvisiblehands.com</p>
       			<p>FRANCE</p>
       		</div>
       		<div class="col">
-      			<h3 class="text-uppercase mb-4">Follow us</h3>
+      			<h3 class="text-uppercase mb-4" lang="en">Follow us</h3>
       			<ul class="list-inline">
       				<li class="list-inline-item"><i class="fab fa-facebook-f fa-2x"></i></li>
       				<li class="list-inline-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
