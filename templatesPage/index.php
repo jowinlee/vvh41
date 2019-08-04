@@ -9,7 +9,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col pt-2">
-                    <button class="btn btn-sm purple-gradient" id="menu-toggle">Categories</button>
+                    <button class="btn btn-sm purple-gradient" id="menu-toggle" lang="en">Categories</button>
+                    <div id="langChanger">  
+                        <a href="#" onclick="window.lang.change('en'); return false;">English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">French</a>    
+                    </div>
                 </div>
                 <div class="col py-3">
                     <p class="text-right text-white my-0">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com">Login</a></p>
@@ -19,10 +22,10 @@
     </div>
 	<div class="d-flex" id="wrapper">
     	<div class="bg-light border-right" id="sidebar-wrapper">
-      		<div class="sidebar-heading text-center">Templates Category</div>
+      		<div class="sidebar-heading text-center" lang="en">Templates Category</div>
       		<div class="list-group list-group-flush" id="templateTab" role="tablist">
-               	<a class="list-group-item active" data-toggle="tab" href="#all" role="tab" aria-controls="all">All</a>       
-               	<a class="list-group-item" data-toggle="tab" href="#enterprice" role="tab" aria-controls="enterprice">Enterprise</a>                
+               	<a class="list-group-item active" data-toggle="tab" href="#all" role="tab" aria-controls="all" lang="en">All</a>       
+               	<a class="list-group-item" data-toggle="tab" href="#enterprice" role="tab" aria-controls="enterprice" lang="en">Enterprise</a>                
                 <a class="list-group-item" data-toggle="tab" href="#destination" role="tab" aria-controls="destination">Page De Destination</a>
                 <a class="list-group-item" data-toggle="tab" href="#prof" role="tab" aria-controls="prof">Services Professionnels</a>
                 <a class="list-group-item" data-toggle="tab" href="#restau" role="tab" aria-controls="restau">Restauration Et Alimentation</a>
