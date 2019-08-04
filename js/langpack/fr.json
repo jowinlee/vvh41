@@ -188,7 +188,31 @@
 		"BLUE FISH" : "POISSON BLEU",
 		"Tailor Shop" : "Boutique sur mesure",
 
-		"Select":"Sélectionner"	
+		"Select":"Sélectionner",
+
+		"We help leaders to attract 5 times more customers to get 3 times more call, visit and order, without them taking their umpteenth cap web designer and this in 3 months.":"Nous aidons les dirigeants à attirer 5 fois plus de clients pour obtenir 3 fois plus d'appels, de visites et de commandes, sans qu'ils prennent leur énième concepteur de sites Web et cela en 3 mois.",
+		"Information":"Information",
+
+		"Home":"Accueil",
+		"Services":"Prestations de service",
+		"Site Templates":"Modèles de site",
+		"Prices":"Des prix",
+		"Request Quote":"Citation requise",
+		"Contact us":"CONTACTEZ NOUS",
+		"Follow us":"SUIVEZ NOUS",
+		"Selected Template":"Modèle sélectionné",
+		"Enter User Account":"Entrer compte utilisateur",
+		"First name":"Prénom",
+		"Last name":"Nom de famille",
+		"E-mail":"Email",
+		"Create site":"CRÉER UN SITE",
+		"Back to templates":"Retour aux modèles",
+
+		"Already have an account?":"Vous avez déjà un compte?",
+		"Login":"S'identifier",
+		"This is your selected Template.":"Ceci est votre modèle sélectionné."
+
+	
 	},
 
 	"regex": [
