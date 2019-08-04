@@ -26,16 +26,16 @@
       		<div class="list-group list-group-flush" id="templateTab" role="tablist">
                	<a class="list-group-item active" data-toggle="tab" href="#all" role="tab" aria-controls="all" lang="en">All</a>       
                	<a class="list-group-item" data-toggle="tab" href="#enterprice" role="tab" aria-controls="enterprice" lang="en">Enterprise</a>                
-                <a class="list-group-item" data-toggle="tab" href="#destination" role="tab" aria-controls="destination">Page De Destination</a>
-                <a class="list-group-item" data-toggle="tab" href="#prof" role="tab" aria-controls="prof">Services Professionnels</a>
-                <a class="list-group-item" data-toggle="tab" href="#restau" role="tab" aria-controls="restau">Restauration Et Alimentation</a>
-                <a class="list-group-item" data-toggle="tab" href="#vide" role="tab" aria-controls="vide">Vide</a>
-                <a class="list-group-item" data-toggle="tab" href="#boutique" role="tab" aria-controls="boutique">Boutique En ligne</a>
-                <a class="list-group-item" data-toggle="tab" href="#evenements" role="tab" aria-controls="evenements">Événements</a>
-                <a class="list-group-item" data-toggle="tab" href="#folio" role="tab" aria-controls="folio">Portfolio et CV</a>
-                <a class="list-group-item" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages">Voyages</a>
-                <a class="list-group-item" data-toggle="tab" href="#title" role="tab" aria-controls="title">Title or question</a>
-                <a class="list-group-item" data-toggle="tab" href="#education" role="tab" aria-controls="education">Communauté et Education</a>
+                <a class="list-group-item" data-toggle="tab" href="#destination" role="tab" aria-controls="destination" lang="en">Landing Page</a>
+                <a class="list-group-item" data-toggle="tab" href="#prof" role="tab" aria-controls="prof" lang="en">Professional Services</a>
+                <a class="list-group-item" data-toggle="tab" href="#restau" role="tab" aria-controls="restau" lang="en">Food and Nutrition</a>
+                <a class="list-group-item" data-toggle="tab" href="#vide" role="tab" aria-controls="vide" lang="en">Empty</a>
+                <a class="list-group-item" data-toggle="tab" href="#boutique" role="tab" aria-controls="boutique" lang="en">Online Store</a>
+                <a class="list-group-item" data-toggle="tab" href="#evenements" role="tab" aria-controls="evenements" lang="en">Events</a>
+                <a class="list-group-item" data-toggle="tab" href="#folio" role="tab" aria-controls="folio" lang="en">Portfolio and CV</a>
+                <a class="list-group-item" data-toggle="tab" href="#art" role="tab" aria-controls="art" lang="en">Art of Living and Health</a>
+                <a class="list-group-item" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages" lang="en">Travelling</a>
+                <a class="list-group-item" data-toggle="tab" href="#education" role="tab" aria-controls="education" lang="en">Community and Education</a>
                 <a class="list-group-item" data-toggle="tab" href="#blog" role="tab" aria-controls="blog">Blog</a>
       		</div>
     	</div>
@@ -81,8 +81,8 @@
             </header>
             <main style="min-height: 592px;">
       		<div class="container-fluid text-center">
-        		<h1>Choose a template to start from</h1>
-                <p>Each template is natively responsive and can be fully customized to your liking.</p>
+        		<h1 lang="en">Choose a template to start from</h1>
+                <p lang="en">Each template is natively responsive and can be fully customized to your liking.</p>
       		</div>
       		<div class="tab-content">
                 <?php
