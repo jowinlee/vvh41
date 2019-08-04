@@ -1,56 +1,52 @@
 <?php
-    include('../functions/functions.php');
+include('../functions/functions.php');
 
-    session_start(); 
+session_start();
 
-        $_SESSION['template'] = $_POST['template'];
+$_SESSION['template'] = $_POST['template'];
 
-        $firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
-        $lastname = isset($_SESSION['lastname']) ? $_SESSION['lastname'] : 'novalue';
-        $email = isset($_SESSION['email']) ? $_SESSION['email'] : 'novalue';
-        $template_id = isset($_SESSION['template']) ? $_SESSION['template'] : 'novalue';
-    
+$firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
+$lastname = isset($_SESSION['lastname']) ? $_SESSION['lastname'] : 'novalue';
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : 'novalue';
+$template_id = isset($_SESSION['template']) ? $_SESSION['template'] : 'novalue';
 
-    $result = getCustomerAccount($email);
 
-    if ($firstname != 'novalue' && $lastname != 'novalue' && $email != 'novalue' && $template_id != 'novalue') {
-        if ($result == 'error'){
+$result = getCustomerAccount($email);
 
-            $siteName = createSite($template_id);
+if ($firstname != 'novalue' && $lastname != 'novalue' && $email != 'novalue' && $template_id != 'novalue') {
+    if ($result == 'error'){
 
-            $account = $email;
+        $siteName = createSite($template_id);
 
-            createCustomerAccount($account,$firstname,$lastname,$email);
+        $account = $email;
 
-            grantAccountAccess($account,$siteName);
+        createCustomerAccount($account,$firstname,$lastname,$email);
 
-            getSSOLink($account,$siteName,'EDITOR');
+        grantAccountAccess($account,$siteName);
 
-            // getResetPass($account);
+        getSSOLink($account,$siteName,'EDITOR');
 
-            session_unset();
+        session_unset();
 
-            die();
-        }else{
-
-            $siteName = createSite($template_id);
-
-            $account = $email;
-
-            updateCustomerAccount($account,$firstname,$lastname);
-
-            grantAccountAccess($account,$siteName);
-
-            getSSOLink($account,$siteName,'EDITOR');
-
-            session_unset();
-
-            die();
-
-        }
-
+        die();
     }else{
-        echo "Saving is error!!!";
-        print_r($_SESSION);
+
+        $siteName = createSite($template_id);
+
+        $account = $email;
+
+        grantAccountAccess($account,$siteName);
+
+        session_unset();
+
+        header('Location: https://createur.virtualvisiblehands.com');
+
+        die();
+
     }
+
+}else{
+    echo "Saving is error!!!";
+    print_r($_SESSION);
+}
 ?>
