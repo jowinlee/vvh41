@@ -8,8 +8,8 @@
 
 <?php else: ?>
     <div class="card">
-        <h5 class="card-header special-color white-text text-center py-4" lang="en">
-            <strong>Create Account</strong>
+        <h5 class="card-header special-color white-text text-center py-4">
+            <strong lang="en">Create Account</strong>
         </h5>
         <div class="card-body px-lg-5 pt-0">
             <form class="text-center" style="color: #757575;" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
