@@ -17,7 +17,6 @@
 		"Art of Living and Health":"Art de vivre et santé",
 		"Travelling":"Voyages",
 		"Community and Education":"Communauté et éducation",
-
 		"Vacation":"Vacances",
 		"Product":"Produit",
 		"Barber Shop":"Salon de coiffure",
@@ -48,7 +47,6 @@
 		"Marketing Agency":"Agence de marketing",
 		"Local Restaurant":"Restaurant local",
 		"Boutique Law Firm":"Cabinet d'avocats boutique",
-
 		"Non-Profit Foundation":"Fondation à but non lucratif",
 		"Home Decor":"Décoration de maison",
 		"Medical Clinic":"Clinique médicale",
@@ -134,7 +132,6 @@
 		"Bakery" : "Boulangerie",
 		"Construction Work" : "Construction_Gros-oeuvre",
 		"Company of the future" : "Entreprise du futur",
-
 		"Transport" : "Transport",
 		"Pricing" : "Prix",
 		"Abcsisse" : "Abcsisse",
@@ -145,7 +142,6 @@
 		"VVH12" : "VVH12",
 		"food equipment" : "materiel de alimentaire",
 		"Old mansions" : "Vieux manoirs",
-
 		"landing APP page" : "page d'atterrissage APP",
 		"ID Sushi" : "ID Sushi",
 		"ADS-Select-Courses" : "ADS-Select-Courses",
@@ -210,7 +206,10 @@
 
 		"Already have an account?":"Vous avez déjà un compte?",
 		"Login":"S'identifier",
-		"This is your selected Template.":"Ceci est votre modèle sélectionné."
+		"This is your selected Template.":"Ceci est votre modèle sélectionné.",
+		"Create Account":"Créer un compte",
+		"Proceed to Templates":"Passer aux modèles",
+		"Already has an account?":"Vous avez déjà un compte?"
 
 	
 	},
