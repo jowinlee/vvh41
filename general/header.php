@@ -3,23 +3,29 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col pt-2">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="mdb logo">
+          </a>
+          <div id="langChanger">  
+          <a href="#" onclick="window.lang.change('en'); return false;">English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">French</a>    
         </div>
+        </div>        
         <div class="col py-3">
-          <p class="text-right text-white my-0">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com">Login</a></p>
+          <p class="text-right text-white my-0" lang="en">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com" lang="en">Login</a></p>
         </div>
       </div>
     </div>
   </div>
   <div class="container">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
+      <!-- <a class="navbar-brand" href="#">
         <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="mdb logo">
-      </a>
+      </a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
         aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center" id="basicExampleNav">
+      <!--<div class="collapse navbar-collapse justify-content-center" id="basicExampleNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="virtualvisiblehands.com">Home</a>
@@ -43,7 +49,7 @@
         <form class="form-inline my-2 my-lg-0">
           <button class="btn vvh-orange rounded text-white my-2 my-sm-0" type="button"><strong>Create Free Acount</strong></button>
         </form>    
-      </div>
+      </div>-->
     </nav>
   </div>
 </header>

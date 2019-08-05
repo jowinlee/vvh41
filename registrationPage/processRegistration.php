@@ -15,11 +15,11 @@
         createCustomerAccount($account,$firstname,$lastname,$email);
 
         echo '
-            <div class="container">
+            <div class="container mt-5">
                 <h2 class="text-success">Account "'.$account.'" is successfully created.</h2>
                 <p>Please check your email to reset your password.</p><br>
                 <a href="../templatesPage/index.php">Choose Templates</a><br>
-                <a href="https://createur.virtualvisiblehands.com"></a>
+                <a href="https://createur.virtualvisiblehands.com">Login</a>
             </div>
         ';
 
@@ -30,5 +30,5 @@
         echo "Saving is error!!!";
         print_r($_SESSION);
     }
-    include('../general/header.php');
+    include('../general/footer.php');
 ?>
