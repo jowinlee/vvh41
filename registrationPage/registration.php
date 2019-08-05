@@ -1,12 +1,31 @@
-<?php if (!empty($_POST)): 
-    $_SESSION['firstname'] = $_POST['firstname'];
-    $_SESSION['lastname'] = $_POST['lastname'];
-    $_SESSION['email'] = $_POST['email'];
 
-    header('Location: ../templatesPage/index.php');
+<?php 
+    include('../functions/functions.php');
+
+    if (!empty($_POST)): 
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $email = $_POST['email'];
+
+        $result = getCustomerAccount($email);
+
+        if ($result == 'available'){
+
+            session_start();
+
+            $_SESSION['firstname'] = $firstname;
+            $_SESSION['lastname'] = $lastname;
+            $_SESSION['email'] = $email;
+
+            header('Location: processRegistration.php');
+        }else{
+
+            header('Location: error.php');
+        }
 ?>
    
 <?php else: ?>
+
 <div class="card">
     <h5 class="card-header special-color white-text text-center py-4">
         <strong>Create Account</strong>

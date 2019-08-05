@@ -1,5 +1,5 @@
 <?php include('../general/head.php'); session_start(); session_unset(); ?>
-<?php include('../general/header.php');?>
+<?php include('../general/header.php'); ?>
     <main style="min-height: 540px;">
         <div class="container">
             <div class="row">
