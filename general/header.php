@@ -4,11 +4,14 @@
       <div class="row">
         <div class="col pt-2">
           <a class="navbar-brand" href="#">
-        <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="mdb logo">
-      </a>
+            <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="mdb logo">
+          </a>
+          <div id="langChanger">  
+          <a href="#" onclick="window.lang.change('en'); return false;">English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">French</a>    
         </div>
+        </div>        
         <div class="col py-3">
-          <p class="text-right text-white my-0">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com">Login</a></p>
+          <p class="text-right text-white my-0" lang="en">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com" lang="en">Login</a></p>
         </div>
       </div>
     </div>
