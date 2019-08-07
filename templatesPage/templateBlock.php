@@ -15,6 +15,7 @@
 		    		$firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
 				    $lastname = isset($_SESSION['lastname']) ? $_SESSION['lastname'] : 'novalue';
 				    $email = isset($_SESSION['email']) ? $_SESSION['email'] : 'novalue';
+				    
 				    if ($firstname == 'novalue' && $lastname == 'novalue' && $email == 'novalue') {
 				    	$action = 'templateForm.php';
 				    }elseif ($firstname != 'novalue' && $lastname != 'novalue' && $email != 'novalue') {

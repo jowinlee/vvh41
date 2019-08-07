@@ -1,12 +1,12 @@
 <?php include('../functions/functions.php'); ?>
 <?php include('../general/head.php'); ?>
-
+<?php include('../general/header.php'); ?>
     <div class="container">      
         <div class="row">
-            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 py-5">
-                <?php
+            <div class="col-12 col-sm-5 col-md-5 col-lg-5 py-5">
+                <?php                    
                     session_start();
-                    
+
                     $_SESSION['template'] = $_POST["template"];
                     
                     $template_id = $_SESSION['template'];

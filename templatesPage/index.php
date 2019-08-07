@@ -10,9 +10,9 @@
             <div class="row">
                 <div class="col pt-2">
                     <button class="btn btn-sm purple-gradient" id="menu-toggle" lang="en">Categories</button>
-                    <div id="langChanger">  
+                    <span class="col pt-3" id="langChanger">  
                         <a href="#" onclick="window.lang.change('en'); return false;">English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">French</a>    
-                    </div>
+                    </span>
                 </div>
                 <div class="col py-3">
                     <p class="text-right text-white my-0" lang="en">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com" lang="en">Login</a></p>

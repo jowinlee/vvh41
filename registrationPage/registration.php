@@ -1,5 +1,5 @@
 <?php 
-    include('../functions/functions.php');
+    include('../functions/functions.php');    
 
     if (!empty($_POST)): 
         $firstname = $_POST['firstname'];
@@ -7,6 +7,7 @@
         $email = $_POST['email'];
 
         $result = getCustomerAccount($email);
+        $website = getSiteByAccount($email);
 
         if ($result == 'available'){
 
@@ -14,10 +15,20 @@
             $_SESSION['lastname'] = $lastname;
             $_SESSION['email'] = $email;
 
-            header('Location: processRegistration.php');
-        }else{
+            header('Location: ../templatesPage/index.php');
+        }elseif($result != 'available'){
 
-            header('Location: error.php');
+            if ($website == 'none') {
+
+                $_SESSION['firstname'] = $firstname;
+                $_SESSION['lastname'] = $lastname;
+                $_SESSION['email'] = $email;
+
+                header('Location: ../templatesPage/index.php');
+            }else{
+
+                header('Location: error.php');
+            }
         }
 ?>
    

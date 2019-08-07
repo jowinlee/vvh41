@@ -1,23 +1,24 @@
 
 <?php
     include('../functions/functions.php');
+    include('../phpmailer/resetPassMail.php');
 
-    session_start(); 
+    session_start(); 	
 
-	$_SESSION['firstname'] = $_POST['firstname'];
-	$_SESSION['lastname'] = $_POST['lastname'];
-	$_SESSION['email'] = $_POST['email'];
+    $_SESSION['firstname'] = $_POST['firstname'];
+    $_SESSION['lastname'] = $_POST['lastname'];
+    $_SESSION['email'] = $_POST['email'];
 
     $firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
     $lastname = isset($_SESSION['lastname']) ? $_SESSION['lastname'] : 'novalue';
     $email = isset($_SESSION['email']) ? $_SESSION['email'] : 'novalue';
-    $template_id = isset($_SESSION['template']) ? $_SESSION['template'] : 'novalue';
-    
+    $template_id = isset($_SESSION['template']) ? $_SESSION['template'] : 'novalue';    
 
     $result = getCustomerAccount($email);
+    $website = getSiteByAccount($email);
 
     if ($firstname != 'novalue' && $lastname != 'novalue' && $email != 'novalue' && $template_id != 'novalue') {
-        if ($result == 'error'){
+        if ($result == 'available'){            
 
             $siteName = createSite($template_id);
 
@@ -29,24 +30,33 @@
 
             getSSOLink($account,$siteName,'EDITOR');
 
-            session_unset();
+            $resetPassLink = getResetPass($account);
+
+            getResetMail($account,$resetPassLink);
+
+            session_unset(); 
 
             die();
-        }else{
+        }elseif($result != 'available'){
 
-            $siteName = createSite($template_id);
+            if ($website == 'none') {
 
-            $account = $email;
+                $siteName = createSite($template_id);
 
-            grantAccountAccess($account,$siteName);
+                $account = $email;
 
-            session_unset();
+                grantAccountAccess($account,$siteName);
 
-            header('Location: https://createur.virtualvisiblehands.com');
+                getSSOLink($account,$siteName,'EDITOR');
 
-            die();
+                session_unset();
+
+                die();
+            }else{
+
+                header('Location: https://createur.virtualvisiblehands.com');
+            }
         }
-
     }else{
         echo "Saving is error!!!";
         print_r($_SESSION);
