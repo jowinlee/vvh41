@@ -1,52 +1,34 @@
 <?php
-include('../functions/functions.php');
+    include('../functions/functions.php');
+    include('../general/head.php');
+    include('../general/header.php');
+    session_start(); 
 
-session_start();
+    $firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
+    $lastname = isset($_SESSION['lastname']) ? $_SESSION['lastname'] : 'novalue';
+    $email = isset($_SESSION['email']) ? $_SESSION['email'] : 'novalue';
 
-$_SESSION['template'] = $_POST['template'];
-
-$firstname = isset($_SESSION['firstname']) ? $_SESSION['firstname'] : 'novalue';
-$lastname = isset($_SESSION['lastname']) ? $_SESSION['lastname'] : 'novalue';
-$email = isset($_SESSION['email']) ? $_SESSION['email'] : 'novalue';
-$template_id = isset($_SESSION['template']) ? $_SESSION['template'] : 'novalue';
-
-
-$result = getCustomerAccount($email);
-
-if ($firstname != 'novalue' && $lastname != 'novalue' && $email != 'novalue' && $template_id != 'novalue') {
-    if ($result == 'error'){
-
-        $siteName = createSite($template_id);
+    if ($firstname != 'novalue' && $lastname != 'novalue' && $email != 'novalue') {
 
         $account = $email;
 
         createCustomerAccount($account,$firstname,$lastname,$email);
 
-        grantAccountAccess($account,$siteName);
+        echo '
+            <div class="container mt-5">
+                <h2 class="text-success">Account "'.$account.'" is successfully created.</h2>
+                <p>Please check your email to reset your password.</p><br>
+                <a href="../templatesPage/index.php">Choose Templates</a><br>
+                <a href="https://createur.virtualvisiblehands.com">Login</a>
+            </div>
+        ';
 
-        getSSOLink($account,$siteName,'EDITOR');
-
-        session_unset();
+        session_unset(); 
 
         die();
     }else{
-
-        $siteName = createSite($template_id);
-
-        $account = $email;
-
-        grantAccountAccess($account,$siteName);
-
-        session_unset();
-
-        header('Location: https://createur.virtualvisiblehands.com');
-
-        die();
-
+        echo "Saving is error!!!";
+        print_r($_SESSION);
     }
-
-}else{
-    echo "Saving is error!!!";
-    print_r($_SESSION);
-}
+    include('../general/footer.php');
 ?>

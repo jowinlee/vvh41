@@ -141,16 +141,15 @@
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
         $output = curl_exec($ch);
-        $error = 'error';
+        $available = 'available';
 
         if(curl_getinfo($ch,CURLINFO_HTTP_CODE) == 200) {
             curl_close($ch);
             return $output;
-            header('Location:error.php');
         } else {
             curl_close($ch);
             http_response_code(400);
-            return $error;
+            return $available;
         }
     }
 
