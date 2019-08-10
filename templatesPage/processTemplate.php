@@ -54,7 +54,8 @@
                 die();
             }else{
 
-                header('Location: https://createur.virtualvisiblehands.com');
+                //header('Location: https://createur.virtualvisiblehands.com');
+                header('Location: error.php');
             }
         }
     }else{

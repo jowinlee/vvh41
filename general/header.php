@@ -24,4 +24,4 @@
     </nav>
   </div>
 </header>
-<main style="min-height: 592px;">
+<main style="min-height: 300px;">
