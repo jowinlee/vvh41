@@ -6,7 +6,7 @@ require 'vendor/autoload.php';
 function getResetMail($account,$resetPassLink){
 
 	$mail = new PHPMailer;
-
+	$mail->SMTPDebug = 2;
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->Port = 587;
