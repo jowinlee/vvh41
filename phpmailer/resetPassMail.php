@@ -13,7 +13,7 @@ function getResetMail($account,$resetPassLink){
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
 	$mail->Username = "contact@virtualvisiblehands.com";
-	$mail->Password = "v25bh9gnlv16";
+	$mail->Password = "G@lm#3421!kK";
 	$mail->setFrom('contact@virtualvisiblehands.com');
 	$mail->addReplyTo('contact@virtualvisiblehands.com');
 	$mail->addCC('virtualvisiblehands@gmail.com');
