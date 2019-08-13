@@ -28,7 +28,9 @@
 
             grantAccountAccess($account,$siteName);
 
-            getSSOLink($account,$siteName,'EDITOR');
+            publishSite($siteName);
+
+            //getSSOLink($account,$siteName,'EDITOR');
 
             $resetPassLink = getResetPass($account);
 

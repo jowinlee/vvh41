@@ -9,6 +9,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col pt-2">
+                    <a href="https://www.concepteur-site-web.fr/"><img class="img-fluid" src="../img/vvh4.png" alt="vvh logo" style="max-height: 40px;"></a>
                     <button class="btn btn-sm purple-gradient" id="menu-toggle" lang="en">Categories</button>
                     <span class="col pt-3" id="langChanger">  
                         <a href="#" onclick="window.lang.change('en'); return false;">English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">French</a>    
@@ -35,7 +36,6 @@
                 <a class="list-group-item" data-toggle="tab" href="#folio" role="tab" aria-controls="folio" lang="en">Portfolio and CV</a>
                 <a class="list-group-item" data-toggle="tab" href="#art" role="tab" aria-controls="art" lang="en">Art of Living and Health</a>
                 <a class="list-group-item" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages" lang="en">Travelling</a>
-<!--            <a class="list-group-item" data-toggle="tab" href="#title" role="tab" aria-controls="title" lang="en">Title or question</a> -->
                 <a class="list-group-item" data-toggle="tab" href="#education" role="tab" aria-controls="education" lang="en">Community and Education</a>
                 <a class="list-group-item" data-toggle="tab" href="#blog" role="tab" aria-controls="blog">Blog</a>
       		</div>

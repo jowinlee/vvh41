@@ -1,8 +1,8 @@
 <header class="vvh-blue">
   <div class="container-full">
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
-        <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="mdb logo">
+      <a class="navbar-brand" href="https://www.concepteur-site-web.fr/">
+        <img class="img-fluid vvh-logo1" src="../img/vvh4.png" alt="vvh logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
         aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
