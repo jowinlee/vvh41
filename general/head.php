@@ -11,11 +11,11 @@
         <link href="../css/styles.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://irp-cdn.multiscreensite.com/1a7979e6/site_favicon_16_1564951298586.ico">
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" async defer></script> 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script> -->    
-        <script src="../js/js.cookie.js" charset="utf-8" type="text/javascript"></script>   
-        <script src="../js/jquery-lang.js" charset="utf-8" type="text/javascript"></script> 
-         <script type="text/javascript">    
+        <script src="../js/js.cookie.js" charset="utf-8" type="text/javascript" async defer></script>   
+        <script src="../js/jquery-lang.js" charset="utf-8" type="text/javascript" async defer></script> 
+        <script type="text/javascript">    
         var lang = new Lang();  
         lang.dynamic('fr', '../js/langpack/fr.json');   
         lang.init({ 
