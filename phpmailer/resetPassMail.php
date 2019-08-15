@@ -6,14 +6,14 @@ require 'vendor/autoload.php';
 function getResetMail($account,$resetPassLink){
 
 	$mail = new PHPMailer;
-	$mail->SMTPDebug = 2;
+	$mail->SMTPDebug = 3;
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->Port = 587;
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
 	$mail->Username = "contact@virtualvisiblehands.com";
-	$mail->Password = "G@lm#3421!kK";
+	$mail->Password = "Guilhem@Arnal34";
 	$mail->setFrom('contact@virtualvisiblehands.com');
 	$mail->addReplyTo('contact@virtualvisiblehands.com');
 	$mail->addCC('virtualvisiblehands@gmail.com');
