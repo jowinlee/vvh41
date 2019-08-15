@@ -40,6 +40,9 @@
 	<script type="text/javascript" src="../js/popper.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/mdb.min.js"></script>
+      <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> 
+      <script src="../js/js.cookie.js" charset="utf-8" type="text/javascript"></script>   
+      <script src="../js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>  -->
       <script type="text/javascript">
             function googleTranslateElementInit() {
               new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');

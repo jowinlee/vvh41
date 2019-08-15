@@ -25,7 +25,9 @@
 
             createCustomerAccount($account,$firstname,$lastname,$email);
 
-            grantAccountAccess($account,$siteName);
+            //grantAccountAccess($account,$siteName);
+
+            grantCompleteAccountAccess($account,$siteName);
 
             getSSOLink($account,$siteName,'EDITOR');
 
