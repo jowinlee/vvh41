@@ -5,7 +5,10 @@
 	position: absolute;
 }
 .vvh-logo1{
-	height: 70px;
+	height: 50px;
+}
+.goog-logo-link{
+  color: #fff !important;
 }
 .vvh-blue{
   background: #20407e !important;

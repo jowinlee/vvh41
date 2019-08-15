@@ -50,17 +50,17 @@
                 <div class="col">
                     <div class="md-form">
                         <input type="text" name="lastname" id="lastname" class="form-control" required="required">
-                        <label for="lastname" lang="en">Last name</label>
+                        <label for="lastname">Last name</label>
                     </div>
                 </div>
             </div>
             <div class="md-form mt-0">
                 <input type="email" name="email" id="email" class="form-control" required="required">
-                <label for="email" lang="en">E-mail</label>
+                <label for="email">E-mail</label>
             </div>
-            <button class="btn btn-success btn-rounded btn-block my-4 z-depth-0" type="submit" id="regBtn" lang="en">Proceed to Templates</button>
+            <button class="btn btn-success btn-rounded btn-block my-4 z-depth-0" type="submit" id="regBtn">Proceed to Templates</button>
         </form>
-        <p lang="en">Already has an account?<a href="" lang="en">Login</a></p>
+        <p>Already has an account?<a href="">Login</a></p>
     </div>
 </div>
 <?php endif; ?>
