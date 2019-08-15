@@ -35,7 +35,7 @@
 <?php else: ?>
 
 <div class="card">
-    <h5 class="card-header special-color white-text text-center py-4">
+    <h5 class="card-header special-color white-text text-center py-4" lang="en">
         <strong>Create Account</strong>
     </h5>
     <div class="card-body px-lg-5 pt-0">                
@@ -44,7 +44,7 @@
                 <div class="col">
                     <div class="md-form">
                         <input type="text" name="firstname" id="firstname" class="form-control" required="required">
-                        <label for="firstname">First name</label>
+                        <label for="firstname" lang="en">First name</label>
                     </div>
                 </div>
                 <div class="col">
