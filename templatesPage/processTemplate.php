@@ -26,13 +26,13 @@
 
             createCustomerAccount($account,$firstname,$lastname,$email);
 
-            //grantAccountAccess($account,$siteName);
+            grantAccountAccess($account,$siteName);
 
-            grantCompleteAccountAccess($account,$siteName);
+            //grantCompleteAccountAccess($account,$siteName);
 
-            publishSite($siteName);
+            //publishSite($siteName);
 
-            //getSSOLink($account,$siteName,'EDITOR');
+            getSSOLink($account,$siteName,'EDITOR');
 
             $resetPassLink = getResetPass($account);
 

@@ -165,7 +165,8 @@
           "BLOG",
           "PUSH_NOTIFICATIONS",
           "PUBLISH",
-          "CUSTOM_DOMAIN"]
+          "CUSTOM_DOMAIN",
+          "E_COMMERCE"]
         }';
 
         $ch = curl_init();
@@ -191,24 +192,22 @@
 
     function grantCompleteAccountAccess($account,$siteName) {
 
-        $data = '{"permissions":[
-            "STATS_TAB",
-            "EDIT",
-            "E_COMMERCE",
-            "PUBLISH",
-            "REPUBLISH",
-            "DEV_MODE",
-            "INSITE",
-            "SEO",
-            "BACKUPS",
-            "CUSTOM_DOMAIN",
-            "RESET",
-            "BLOG",
-            "PUSH_NOTIFICATIONS",
-            "LIMITED_EDITING",
-            "SITE_COMMENTS",
-            "CONTENT_LIBRARY"
-        ]}';
+        $data = '{"permissions":["STATS_TAB",
+        "EDIT",
+        "E_COMMERCE",
+        "PUBLISH",
+        "REPUBLISH",
+        "DEV_MODE",
+        "INSITE",
+        "SEO",
+        "BACKUPS",
+        "CUSTOM_DOMAIN",
+        "RESET",
+        "BLOG",
+        "PUSH_NOTIFICATIONS",
+        "LIMITED_EDITING",
+        "SITE_COMMENTS",
+        "CONTENT_LIBRARY"]}';
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
