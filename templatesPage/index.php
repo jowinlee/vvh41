@@ -4,7 +4,7 @@
 ?>
 <?php include('../general/head.php');?>
 <a href="#" id="scroll" style="display: none;"><span></span></a>    
-<?php include('../general/header.php');?>
+<?php include('../general/header-2.php');?>
 	<div class="container-fluid text-center">
 		<h1>Choose a template to start from</h1>
         <p>Each template is natively responsive and can be fully customized to your liking.</p>

@@ -3,7 +3,7 @@
 <?php include('../general/header.php'); ?>
     <div class="container">      
         <div class="row">
-            <div class="col-12 col-sm-5 col-md-5 col-lg-5 py-5">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-5">
                 <?php                    
                     session_start();
 
@@ -24,7 +24,7 @@
                 ?>
             </div>
             <div class="col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6 py-5">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="card">
                     <h5 class="card-header special-color white-text py-4">Enter User Account</h5>
                     <div class="card-body px-lg-5 pt-5">                

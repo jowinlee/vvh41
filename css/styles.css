@@ -4,14 +4,17 @@
 	transform: translate(-50%, -50%);
 	position: absolute;
 }
-.vvh-logo1{
+.vvh-logo-header{
 	height: 80px;
 }
-.goog-logo-link{
-  color: #fff !important;
+.vvh-logo-footer{
+  height: 136px;
 }
 .vvh-blue{
   background: #20407e !important;
+}
+.vvh-black{
+  background-color: rgba(0,0,0,1) !important;
 }
 .vvh-orange{
   background: #f05a28 !important;
@@ -25,18 +28,29 @@
 .navbar{
   box-shadow: none;
 }
+#templateTab .dropdown-item{
+  display: block !important;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 .template-block .view{
   height: 170px;
   overflow-y: hidden;  
 }
-
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #20407e !important;
+}
 .template-block .card-body h5{
   white-space: nowrap; 
   width: 210px; 
   overflow: hidden;
   text-overflow: ellipsis; 
 }
-
+.page-footer .fab{
+  font-size: 20px;
+}
 #scroll {
     position:fixed;
     right:30px;
