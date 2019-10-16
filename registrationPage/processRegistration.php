@@ -29,7 +29,8 @@
 
             //grantCompleteAccountAccess($account,$siteName);
 
-            getSSOLink($account,$siteName,'EDITOR');
+            //getSSOLink($account,$siteName,'EDITOR');
+            header('Location: ../templatesPage/checkEmail.php');
 
             $resetPassLink = getResetPass($account);
 
@@ -48,7 +49,8 @@
 
                 grantAccountAccess($account,$siteName);
 
-                getSSOLink($account,$siteName,'EDITOR');
+                //getSSOLink($account,$siteName,'EDITOR');
+                header('Location: ../templatesPage/checkEmail.php');
 
                 session_unset();
 

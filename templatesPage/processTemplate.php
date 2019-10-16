@@ -28,15 +28,13 @@
 
             grantAccountAccess($account,$siteName);
 
-            //grantCompleteAccountAccess($account,$siteName);
-
-            //publishSite($siteName);
-
-            getSSOLink($account,$siteName,'EDITOR');
+            //getSSOLink($account,$siteName,'EDITOR');
+            header('Location: checkEmail.php');
 
             $resetPassLink = getResetPass($account);
 
             getResetMail($account,$resetPassLink);
+
 
             session_unset(); 
 
@@ -51,7 +49,8 @@
 
                 grantAccountAccess($account,$siteName);
 
-                getSSOLink($account,$siteName,'EDITOR');
+                //getSSOLink($account,$siteName,'EDITOR');
+                header('Location: checkEmail.php');
 
                 session_unset();
 
