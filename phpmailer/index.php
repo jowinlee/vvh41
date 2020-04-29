@@ -17,7 +17,7 @@ require 'vendor/autoload.php';
 	$mail->addReplyTo('contact@virtualvisiblehands.com');
 	$mail->addCC('virtualvisiblehands@gmail.com');
 	//$mail->addAddress($account); //reciever
-	$mail->addAddress('dennis.desucatan@virtualvisiblehands.com'); //reciever
+	$mail->addAddress($account); //reciever
 	$mail->Subject = 'Virtual Visible Hands Successfull Registration.';
 	$body = '<div style="border: 1px solid #ccc; border-radius: 5px">
 				<div style="padding: 10px 40px; background-color: #ccc;">
