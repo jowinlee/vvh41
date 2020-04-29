@@ -7,9 +7,9 @@
 
         $sitename = $_POST['sitename'];
 
-        $result = deleteAccount($sitename);
+        $result = unpublishSite($sitename);
 
-        echo "<h1 class='text-info mt-5'>Client has been Deleted!</h1>";
+        echo "<div class='container'><h1 class='text-success mt-5'>Site has been Unpublished!</h1></div>";
 
 ?>
 <?php else: ?>

@@ -9,7 +9,7 @@
 
         $result = deleteAccount($email);
 
-        echo "<h1 class='text-info mt-5'>Client has been Deleted!</h1>";
+        echo "<div class='container'><h1 class='text-success mt-5'>Client has been Deleted!</h1></div>";
 
 ?>
 <?php else: ?>
