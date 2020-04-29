@@ -5,9 +5,9 @@
    
     if (!empty($_POST)): 
 
-        $email = $_POST['email'];
+        $sitename = $_POST['sitename'];
 
-        $result = deleteAccount($email);
+        $result = deleteAccount($sitename);
 
         echo "<h1 class='text-info mt-5'>Client has been Deleted!</h1>";
 
@@ -21,10 +21,10 @@
                     <div class="card-body px-lg-5 pt-5">                
                         <form style="color: #757575;" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">                            
                             <div class="md-form mt-0">
-                                <input type="email" name="email" id="email" class="form-control" required="required">
-                                <label for="email" lang="en">E-mail</label>
+                                <input type="text" name="sitename" id="sitename" class="form-control" required="required">
+                                <label for="sitename" lang="en">Enter SiteName</label>
                             </div>
-                            <button class="btn btn-success btn-rounded btn-block my-4 z-depth-0" type="submit" lang="en">Delete Account</button> 
+                            <button class="btn btn-success btn-rounded btn-block my-4 z-depth-0" type="submit" lang="en">Delete</button> 
                         </form>
                     </div>
                 </div>

@@ -423,11 +423,11 @@
                 // This function captures the funds from the transaction.
                 return actions.order.capture().then(function(details) {
                     // This function shows a transaction success message to your buyer.
-                    alert('Thank you for your purchase. <br> Transaction completed by ' + details.payer.name.given_name) + '.';
+                    alert('Thank you for your purchase. Transaction completed by ' + details.payer.name.given_name) + '.';
                     console.log('Publishing site code : '+site_code);
 
                     // Add your code here to publish the site... Call a url that publish the site
-                    var url = '../checkoutsuccess?sitename='+site_code; //Url redirection that publish the site.
+                    var url = '../checkoutsuccess?sitename='+site_code+'&clientname='+details.payer.name.given_name; //Url redirection that publish the site.
                     window.location.href = url;
                 });
                 }

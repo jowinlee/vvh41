@@ -344,8 +344,8 @@
 
         if(curl_getinfo($ch,CURLINFO_HTTP_CODE) == 204) {
             curl_close($ch);
-            //return $output;
-            header('Location:' . $output);
+            return $output;
+            //header('Location:' . $output);
         } else {
             curl_close($ch);
             http_response_code(400);
