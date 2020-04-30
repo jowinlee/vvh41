@@ -401,7 +401,7 @@
     // CLIENT ID for SANDBOX
     //$CLIENT_ID = 'AfRj_EOf7J-LDHlbRXxsqHFjfHygyxLhzgCCBUPljzZjEY9u-seJzlnjOqmyqCxunkho3dDnk0x9wvKQ';
 ?>
-<script src="https://www.paypal.com/sdk/js?client-id=<?php echo $CLIENT_ID ?>&intent=capture"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=<?php echo $CLIENT_ID ?>&intent=capture&currency=EUR"></script>
 <script type="text/javascript">
     $(document).ready(
         jQuery('.paypal-buttons').each(function(i,el){
@@ -416,7 +416,7 @@
                 return actions.order.create({
                     purchase_units: [{
                     amount: {
-                        currency: "EUR",
+                        currency_code: "EUR",
                         value: value,
                     },
                     description : 'Payment for pubslishing website '+site_code
