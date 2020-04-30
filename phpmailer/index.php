@@ -12,7 +12,7 @@ require 'vendor/autoload.php';
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
 	$mail->Username = "contact@virtualvisiblehands.com";
-	$mail->Password = "vvh@4628";
+	$mail->Password = "Ayazle777# ";
 	$mail->setFrom('contact@virtualvisiblehands.com');
 	$mail->addReplyTo('contact@virtualvisiblehands.com');
 	$mail->addCC('virtualvisiblehands@gmail.com');
