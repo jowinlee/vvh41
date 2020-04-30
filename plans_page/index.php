@@ -416,7 +416,7 @@
                 return actions.order.create({
                     purchase_units: [{
                     amount: {
-                        currency_code : "EUR",
+                        currency: "EUR",
                         value: value,
                     },
                     description : 'Payment for pubslishing website '+site_code
