@@ -7,9 +7,9 @@
 
         $email = $_POST['email'];
 
-        $result = deleteAccount($email);
+        deleteAccount($email);
 
-        echo "<div class='container'><h1 class='text-success mt-5'>Client has been Deleted!</h1></div>";
+        echo "<div class='container'><h1 class='text-success mt-5'>Client "+$email+" has been Deleted!</h1></div>";
 
 ?>
 <?php else: ?>

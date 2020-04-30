@@ -21,7 +21,7 @@
             <div class="tab-content p-3" id="personelTabContent">
                 <div class="tab-pane fade show active" id="personnel-mensuel" role="tabpanel" aria-labelledby="personnel-mensuel-tab">
                     <div class="text-center py-3">
-                        <h1 class="card-title">15.00€</h1>
+                        <h1 class="card-title">0.01€ to test</h1>
                         <p class="card-text">/mensuel</p>
                     </div>
                     <ul class="list-group justify-content-start py-3">
@@ -57,7 +57,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="15.00"></div>
+                    <div class="paypal-buttons" data-desc="personel" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="0.01"></div>
                 </div>
                 <div class="tab-pane fade" id="personnel-annuel" role="tabpanel" aria-labelledby="personnel-annuel-tab">
                     <div class="text-center py-3">
@@ -97,7 +97,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="144.00"></div>
+                    <div class="paypal-buttons" data-desc="personel" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="144.00"></div>
                 </div>              
             </div>   
         </div>
@@ -154,7 +154,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="21.00"></div>
+                    <div class="paypal-buttons" data-desc="entreprise" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="21.00"></div>
                 </div>
                 <div class="tab-pane fade" id="entreprise-annuel" role="tabpanel" aria-labelledby="entreprise-annuel-tab">
                     <div class="text-center py-3">
@@ -194,7 +194,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="204.00"></div>
+                    <div class="paypal-buttons" data-desc="entreprise" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="204.00"></div>
                 </div>              
             </div>   
         </div>
@@ -251,7 +251,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="28.00"></div>
+                    <div class="paypal-buttons" data-desc="commercebasic" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="28.00"></div>
                 </div>
                 <div class="tab-pane fade" id="commercebasic-annuel" role="tabpanel" aria-labelledby="commercebasic-annuel-tab">
                     <div class="text-center py-3">
@@ -291,7 +291,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="288.00"></div>
+                    <div class="paypal-buttons" data-desc="commercebasic" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="288.00"></div>
                 </div>              
             </div>   
         </div>
@@ -348,7 +348,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="40.00"></div>
+                    <div class="paypal-buttons" data-desc="commerceavance" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="40.00"></div>
                 </div>
                 <div class="tab-pane fade" id="commerceavance-annuel" role="tabpanel" aria-labelledby="commerceavance-annuel-tab">
                     <div class="text-center py-3">
@@ -388,7 +388,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-site-code="<?php echo $sitename ?>" data-value="432.00"></div>
+                    <div class="paypal-buttons" data-desc="commerceavance" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="432.00"></div>
                 </div>              
             </div>   
         </div>
@@ -396,8 +396,10 @@
 </div>
 <?php include('../general/foot.php');?>
 <?php 
-    // CLIENT ID for LIVE or SANDBOX
-    $CLIENT_ID = 'AfRj_EOf7J-LDHlbRXxsqHFjfHygyxLhzgCCBUPljzZjEY9u-seJzlnjOqmyqCxunkho3dDnk0x9wvKQ';
+    // CLIENT ID for LIVE
+    $CLIENT_ID = 'Adh5AfMo_uTdo8DEXEc7QPLY0QNbm9_MUEU6qRLVHTbIl71A5YQds4m0Sr2ZZBvGFWIHaI6N3r16JWRD';    
+    // CLIENT ID for SANDBOX
+    //$CLIENT_ID = 'AfRj_EOf7J-LDHlbRXxsqHFjfHygyxLhzgCCBUPljzZjEY9u-seJzlnjOqmyqCxunkho3dDnk0x9wvKQ';
 ?>
 <script src="https://www.paypal.com/sdk/js?client-id=<?php echo $CLIENT_ID ?>&intent=capture"></script>
 <script type="text/javascript">
@@ -406,13 +408,15 @@
             var button = jQuery(el);
             var site_code = button.attr('data-site-code');
             var value = button.attr('data-value');
+            var descript = button.attr('data-desc');
+            var subscription = button.attr('data-subs');
             paypal.Buttons({
                 createOrder: function(data, actions) {
                 // This function sets up the details of the transaction, including the amount and line item details.
                 return actions.order.create({
                     purchase_units: [{
                     amount: {
-                        currency_code : "USD",
+                        currency_code : "EUR",
                         value: value,
                     },
                     description : 'Payment for pubslishing website '+site_code
@@ -423,9 +427,9 @@
                 // This function captures the funds from the transaction.
                 return actions.order.capture().then(function(details) {
                     // This function shows a transaction success message to your buyer.
-                    //alert('Thank you for your purchase. Transaction completed by ' + details.payer.name.given_name) + '.';
-                    console.log('Publishing site code : '+site_code);
-
+                    //console.log('Publishing site code : '+site_code);
+                    //alert('Transaction completed by ' + details.payer.name.given_name) + '.';
+                    //console.log("details",details)
                     // Add your code here to publish the site... Call a url that publish the site
                     var url = '../checkoutsuccess?sitename='+site_code+'&clientname='+details.payer.name.given_name; //Url redirection that publish the site.
                     window.location.href = url;
