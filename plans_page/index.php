@@ -1,7 +1,10 @@
 <?php include('../general/head.php');?>
 <?php   
     $sitename = isset($_GET['sitename']) ? $_GET['sitename'] : 'novalue';
+    if ($sitename == 'novalue') :
+        header('Location: ../templatesPage');
 ?>
+<?php else: ?>
 <div class="container my-5">
     <div class="card-group">
         <div class="card mb-4">
@@ -439,3 +442,4 @@
         })
     );
 </script>
+<?php endif; ?>
