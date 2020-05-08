@@ -24,7 +24,7 @@
             <div class="tab-content p-3" id="personelTabContent">
                 <div class="tab-pane fade show active" id="personnel-mensuel" role="tabpanel" aria-labelledby="personnel-mensuel-tab">
                     <div class="text-center py-3">
-                        <h1 class="card-title">0.01€ to test</h1>
+                        <h1 class="card-title">15.00€</h1>
                         <p class="card-text">/mensuel</p>
                     </div>
                     <ul class="list-group justify-content-start py-3">
@@ -60,7 +60,7 @@
                         </li>
                     </ul>
                     <!-- paypal button to be rendered -->
-                    <div class="paypal-buttons" data-desc="personel" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="0.01"></div>
+                    <div class="paypal-buttons" data-desc="personel" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="15"></div>
                 </div>
                 <div class="tab-pane fade" id="personnel-annuel" role="tabpanel" aria-labelledby="personnel-annuel-tab">
                     <div class="text-center py-3">
