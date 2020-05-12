@@ -16,19 +16,26 @@
         content: "\f111";
     }
 </style>
-<div class="container my-5">    
-    <ul class="nav nav-tabs d-block border-bottom-0" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link border-0 text-dark d-inline px-0 active" id="mensuel-tab" data-toggle="tab" href="#mensuel" role="tab" aria-controls="mensuel" aria-selected="true">
-                Mensuel
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link border-0 text-dark d-inline px-0" id="annuel-tab" data-toggle="tab" href="#annuel" role="tab" aria-controls="annuel" aria-selected="false">
-                Annuel
-            </a>
-        </li>  
-    </ul>
+<div class="container my-5">
+    <div class="row mx-0">
+        <div class="col">
+            <ul class="nav nav-tabs d-block border-bottom-0" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link border-0 text-dark d-inline px-0 active" id="mensuel-tab" data-toggle="tab" href="#mensuel" role="tab" aria-controls="mensuel" aria-selected="true">
+                        Mensuel
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-0 text-dark d-inline px-0" id="annuel-tab" data-toggle="tab" href="#annuel" role="tab" aria-controls="annuel" aria-selected="false">
+                        Annuel
+                    </a>
+                </li>  
+            </ul>            
+        </div>
+        <div class="col">
+            <p>Plans simples. Prix ​​simples. Ne payez que ce dont vous avez vraiment besoin. Tous les plans sont accompagnés d'un support client primé 24h / 24 et 7j / 7. Modifiez ou annulez votre plan à tout moment.</p>
+        </div>
+    </div>  
     <div class="tab-content mt-4">
         <div class="tab-pane fade show active" id="mensuel" role="tabpanel" aria-labelledby="mensuel-tab">
             <div class="row mx-0">
@@ -41,42 +48,9 @@
                             <h1 class="card-title">15.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="personel" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="15.00"></div>
-                        </div>
+                        <?php include('personnel.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="personel" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="15.00"></div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
@@ -88,42 +62,9 @@
                             <h1 class="card-title">21.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="entreprise" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="21.00"></div>
-                        </div>
+                        <?php include('entreprise.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="entreprise" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="21.00"></div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
@@ -135,42 +76,9 @@
                             <h1 class="card-title">28.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="commercebasic" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="28.00"></div>
-                        </div>
+                        <?php include('commerce_basic.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="commercebasic" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="28.00"></div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
@@ -182,42 +90,9 @@
                             <h1 class="card-title">40.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="commerceavance" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="40.00"></div>
-                        </div>
+                        <?php include('commerce_avance.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="commerceavance" data-subs="m" data-site-code="<?php echo $sitename ?>" data-value="40.00"></div>
                     </div>
                 </div>
             </div>
@@ -233,42 +108,9 @@
                             <h1 class="card-title">144.00€</h1>
                             <p class="card-text">12.00€ <small>/mensuel</small></p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="personel" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="144.00"></div>
-                        </div>
+                        <?php include('personnel.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="personel" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="144.00"></div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
@@ -280,42 +122,9 @@
                             <h1 class="card-title">204.00€</h1>
                             <p class="card-text">17.00€ <small>/mensuel</small></p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="entreprise" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="204.00"></div>
-                        </div>
+                        <?php include('entreprise.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="entreprise" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="204.00"></div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
@@ -327,42 +136,9 @@
                             <h1 class="card-title">288.00€</h1>
                             <p class="card-text">24.00€ <small>/mensuel</small></p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="commercebasic" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="288.00"></div>
-                        </div>
+                        <?php include('commerce_basic.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="commercebasic" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="288.00"></div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
@@ -374,42 +150,9 @@
                             <h1 class="card-title">432.00€</h1>
                             <p class="card-text">36.00€ <small>/mensuel</small></p>
                         </div>
-                        <div class="px-2">
-                            <ul class="list-group justify-content-start py-3">
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i> Cras justo odio
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Dapibus ac facilisis in
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Morbi leo risus
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Porta ac consectetur ac
-                                    </small>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="md-v-line"></div>
-                                    <small>
-                                        <i class="fas fa-check mr-5"></i>Vestibulum at eros
-                                    </small>
-                                </li>
-                            </ul>
-                            <!-- paypal button to be rendered -->
-                            <div class="paypal-buttons" data-desc="commerceavance" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="432.00"></div>
-                        </div>
+                        <?php include('commerce_avance.php');?>
+                        <!-- paypal button to be rendered -->
+                        <div class="paypal-buttons px-2" data-desc="commerceavance" data-subs="y" data-site-code="<?php echo $sitename ?>" data-value="432.00"></div>
                     </div>
                 </div>
             </div>
