@@ -25,8 +25,8 @@
             		<div class="col">
             			<h3 class="text-uppercase mb-4">Contact us</h3>
             			<p>
-                                    <a href="tel:0630906774" runtime_url="tel:0630906774" style="">
-                                          <font style="color: rgb(240, 90, 40);">0630906774</font>
+                                    <a href="tel:0767278474" runtime_url="tel:0767278474" style="">
+                                          <font style="color: rgb(240, 90, 40);">0767278474</font>
                                     </a>
                               </p>
             			<p>
