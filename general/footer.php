@@ -15,11 +15,37 @@
             		</div>
             		<div class="col">
             			<h3 class="text-uppercase mb-4">Contactez-nous</h3>
-                                  <p>  contact@virtualvisiblehands.com
-
-                                    Condition Générale d'utilisation
+                                   <p><a href="mailto:contact@virtualvisiblehands.com" runtime_url="mailto:contact@virtualvisiblehands.com" style="color: rgb(240, 90, 40);">
+                                          <font style="color: rgb(240, 90, 40);">contact@virtualvisiblehands.com</font>
+                                    </a></p>
+                                    <p>
+                                      <a href="https://irp-cdn.multiscreensite.com/1a7979e6/files/uploaded/CGV_CGU%20VVH%208_03_2019.docx.pdf" file="true" runtime_url="https://irp-cdn.multiscreensite.com/1a7979e6/files/uploaded/CGV_CGU%20VVH%208_03_2019.docx.pdf" target="_blank" no_space_b="true" no_space_e="true" style="background-color: rgba(0, 0, 0, 0);">
+                                     <span no_space_b="true" no_space_e="true">
+                                      <font style="color: rgb(240, 90, 40);" no_space_b="true" no_space_e="true">
+                                       Condition G&eacute;n&eacute;rale d'utilisation
+                                      </font>
+                                     </span>
+                                    </a></p>
 
                                     Vous avez déjà un compte ? Bienvenue chez VOUS !
+
+                                    <p>
+                                    <a href="tel:0767278474" runtime_url="tel:0767278474" style="">
+                                          <font style="color: rgb(240, 90, 40);">0767278474</font>
+                                    </a>
+                              </p>
+                              <p>
+                                   <!--  <a href="mailto:contact@virtualvisiblehands.com" runtime_url="mailto:contact@virtualvisiblehands.com" style="color: rgb(240, 90, 40);">
+                                          <font style="color: rgb(240, 90, 40);">contact@virtualvisiblehands.com</font>
+                                    </a> -->
+                              </p>
+                              <p>FRANCE</p>
+                              <p>
+                                    <span class="navbar-text white-text">
+                                          Already have an account? 
+                                          <a class="text-danger" href="https://createur.virtualvisiblehands.com">LOGIN HERE</a>
+                                    </span>
+                              </p>
                               </p>
             			<ul class="list-unstyled">
             				<li><p><a href="https://www.concepteur-site-web.fr/">Accuel</a></p></li>
@@ -30,28 +56,12 @@
                                     <li><p><a href="http://environnement-travail.concepteur-site-web.fr/vvh41/forfaits-VirtualVisibleHands-conception-autonome-accompagné/">ForFaits</a></p></li>
             			</ul>
             		</div>
-            		<div class="col">
+            		<!-- <div class="col">
             			<h3 class="text-uppercase mb-4">Contact us</h3>
-            			<p>
-                                    <a href="tel:0767278474" runtime_url="tel:0767278474" style="">
-                                          <font style="color: rgb(240, 90, 40);">0767278474</font>
-                                    </a>
-                              </p>
-            			<p>
-                                    <a href="mailto:contact@virtualvisiblehands.com" runtime_url="mailto:contact@virtualvisiblehands.com" style="color: rgb(240, 90, 40);">
-                                          <font style="color: rgb(240, 90, 40);">contact@virtualvisiblehands.com</font>
-                                    </a>
-                              </p>
-            			<p>FRANCE</p>
-                              <p>
-                                    <span class="navbar-text white-text">
-                                          Already have an account? 
-                                          <a class="text-danger" href="https://createur.virtualvisiblehands.com">LOGIN HERE</a>
-                                    </span>
-                              </p>
-            		</div>
+            			
+            		</div> -->
             		<div class="col">
-            			<h3 class="text-uppercase mb-4">Follow us</h3>
+            			<h3 class="text-uppercase mb-4">Suivez nous</h3>
             			<ul class="list-inline">
             				<li class="list-inline-item">
                                           <a href="https://www.facebook.com/CreateurSiteReactifAdaptatifPro/">
