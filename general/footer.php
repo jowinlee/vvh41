@@ -8,18 +8,26 @@
                               </a>
             			<p class="text-center">
                                <small>
-                                    We help leaders to attract 5 times more customers to get 3 times more call, visit and order, without them taking their umpteenth cap web designer and this in 3 months.
+                                    Notre mission?
+                                    Nous aidons les particuliers, entreprises et  entrepreneurs à se développer grâce à un site web pertinent, pour leur permettre d’attirer jusqu’à 5 fois plus de clients grâce à notre expertise.
                               </small>
                                </p>
             		</div>
             		<div class="col">
-            			<h3 class="text-uppercase mb-4">Information</h3>
+            			<h3 class="text-uppercase mb-4">Contactez-nous</h3>
+                                  <p>  contact@virtualvisiblehands.com
+
+                                    Condition Générale d'utilisation
+
+                                    Vous avez déjà un compte ? Bienvenue chez VOUS !
+                              </p>
             			<ul class="list-unstyled">
-            				<li><p><a href="https://www.concepteur-site-web.fr/">Home</a></p></li>
-            				<li><p><a href="https://www.concepteur-site-web.fr/services">Services</a></p></li>
-            				<li><p><a href="http://environnement-travail.concepteur-site-web.fr/vvh41/templatesPage/">Site Templates</a></p></li>
-            				<li><p><a href="https://www.concepteur-site-web.fr/#Prices">Prices</a></p></li>
-            				<li><p><a href="https://www.concepteur-site-web.fr/#RequestQuote">Request Quote</a></p></li>
+            				<li><p><a href="https://www.concepteur-site-web.fr/">Accuel</a></p></li>
+            				<li><p><a href="https://www.concepteur-site-web.fr/notre-offre">Notre Offre</a></p></li>
+            				<li><p><a href="https://www.concepteur-site-web.fr/#Contact">Contact</a></p></li>
+            				<li><p><a href="https://www.concepteur-site-web.fr/solutions-innovantes-web-blog">Blog</a></p></li>
+            				<li><p><a href="http://environnement-travail.concepteur-site-web.fr/vvh41/templatesPage/">Templates</a></p></li>
+                                    <li><p><a href="http://environnement-travail.concepteur-site-web.fr/vvh41/forfaits-VirtualVisibleHands-conception-autonome-accompagné/">ForFaits</a></p></li>
             			</ul>
             		</div>
             		<div class="col">
