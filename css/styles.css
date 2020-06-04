@@ -13,6 +13,9 @@
 .vvh-blue{
   background: #20407e !important;
 }
+.vvh-trans-blue{
+  background-color: #20407e70 !important;
+}
 .vvh-black{
   background-color: rgba(0,0,0,1) !important;
 }
