@@ -4,18 +4,15 @@
 ?>
 <?php include('../general/head.php');?>
 <a href="#" id="scroll" style="display: none;"><span></span></a>    
-
     <div class="d-flex" id="wrapper">
-        
-             <!-- Sidebar -->
-            <div class="bg-light border-right" id="sidebar-wrapper">
-              <div class="sidebar-heading">
-                  <a class="navbar-brand" href="https://www.concepteur-site-web.fr/">
-                        <img class="img-fluid vvh-logo-header" src="../img/vvh4.png" alt="vvh logo">
-                  </a>
-              </div>
-              <div class="list-group list-group-flush">
-                
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <a class="navbar-brand" href="https://www.concepteur-site-web.fr/">
+                    <img class="img-fluid vvh-logo-header" src="../img/vvh4.png" alt="vvh logo">
+                </a>
+            </div>
+            <div class="list-group list-group-flush">
                 <a class="list-group-item list-group-item-action bg-light" data-toggle="tab" href="#all" role="tab" aria-controls="all">All</a>       
                 <a class="list-group-item list-group-item-action bg-light" data-toggle="tab" href="#enterprice" role="tab" aria-controls="enterprice">Enterprise</a>    
                 <a class="list-group-item list-group-item-action bg-light" data-toggle="tab" href="#destination" role="tab" aria-controls="destination">Landing Page</a>
@@ -29,9 +26,9 @@
                 <a class="list-group-item list-group-item-action bg-light" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages">Travelling</a>
                 <a class="list-group-item list-group-item-action bg-light" data-toggle="tab" href="#education" role="tab" aria-controls="education">Community and Education</a>
                 <a class="list-group-item list-group-item-action bg-light" data-toggle="tab" href="#blog" role="tab" aria-controls="blog">Blog</a>
-              </div>
             </div>
-    <!-- /#sidebar-wrapper -->
+        </div>
+        <!-- /#sidebar-wrapper -->
             <div id="page-content-wrapper" class="">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom vvh-blue">
                     <!--<button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>-->
@@ -276,3 +273,19 @@
         }); 
     });
 </script>
+<script type='text/javascript' charset='utf-8'>
+    window.liveSiteAsyncInit = function() {
+        LiveSite.init({
+            id : 'WI-7JPD173D9GDCA601MGZR'
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0],
+        p = 'https://',
+        r = Math.floor(new Date().getTime() / 1000000);
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = p + "d2ra6nuwn69ktl.cloudfront.net/assets/livesite.js?" + r;
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'livesite-jssdk'));
+</script>   
