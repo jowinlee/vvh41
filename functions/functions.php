@@ -103,7 +103,7 @@
         //check result for correct HTTP code
         if(curl_getinfo($ch,CURLINFO_HTTP_CODE) == 200) {
             curl_close($ch);
-            echo $ch;
+            
             return $output;
         } else {
             curl_close($ch);
