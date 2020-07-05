@@ -12,11 +12,11 @@ require 'vendor/autoload.php';
 	$mail->SMTPSecure = 'tls';
 	$mail->SMTPAuth = true;
 	$mail->Username = "contact@virtualvisiblehands.com";
-	$mail->Password = "Ayazle777#";
+	$mail->Password = "cotiraho#!!38";
 	$mail->setFrom('contact@virtualvisiblehands.com');
 	$mail->addReplyTo('contact@virtualvisiblehands.com');
 	$mail->addCC('virtualvisiblehands@gmail.com');
-	$mail-> ($account); //reciever
+	$mail->addAddress($account); //reciever
 	$mail->Subject = 'Virtual Visible Hands Successfull Registration.';
 	$body = '<div style="border: 1px solid #ccc; border-radius: 5px">
 				<div style="padding: 10px 40px; background-color: #ccc;">
