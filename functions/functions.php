@@ -99,11 +99,9 @@
         //execute cURL call
         $output = curl_exec($ch);
 
-
         //check result for correct HTTP code
         if(curl_getinfo($ch,CURLINFO_HTTP_CODE) == 200) {
             curl_close($ch);
-            
             return $output;
         } else {
             curl_close($ch);
@@ -374,27 +372,5 @@
             http_response_code(400);
             die('Unpublish, error: ' . $output . '<br/>');
         }
-    }
-
-     function getSiteDetails($siteName) {
-
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_URL,'https://api.duda.co/api/sites/multiscreen/'.$siteName);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, API_USER.':'.API_PASS);
-        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
-        $output = curl_exec($ch);
-
-        if(curl_getinfo($ch,CURLINFO_HTTP_CODE) == 200) {
-            curl_close($ch);
-            return $output->first_published_date;
-        } else {
-            curl_close($ch);
-            http_response_code(400);
-            die('No Site, error: ' . $output . '<br/>');
-        }
-    }       
+    }        
 ?>
