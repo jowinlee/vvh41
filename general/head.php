@@ -11,7 +11,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/mdb.min.css">
-        <link rel="stylesheet" href="../css/styles.css">  
+        <link rel="stylesheet" href="../css/styles.css">
+        <!-- Memberstack --> 
+        <script src="https://api.memberstack.io/static/memberstack.js?duda" data-memberstack-id="b2730f5f3f44dbd77ef54fb258efcfd4"> </script>
+        <script async src="https://my.duda.co/_dm/s/common/scripts/publishOverlayAPI.js"></script>
         <!-- Global site tag (gtag.js) - Google Ads: 730799332 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-730799332"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-730799332'); </script>
         <script> gtag('config', 'AW-730799332/gD4PCJe0lKMBEOS5vNwC', { 'phone_conversion_number': '0767278474' }); </script>             
     </head>
