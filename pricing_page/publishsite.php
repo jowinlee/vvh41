@@ -10,8 +10,7 @@
 
 		if (isset($mysite)){
 			alert('Thank you for publishing your site with us!')
-			header('Location: '.$mysite);
-			session_destroy();
+			header('Location: ' . $mysite);
 		}
     }else{
 
