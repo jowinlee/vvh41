@@ -11,7 +11,8 @@
     }
 </style>
 <?php
-    echo $_GET['accountname'];
+    session_start();
+    $_SESSION['site'] = $_GET['sitename'];
 ?>
 <div class="container my-5">
     <div class="row mx-0">
@@ -119,7 +120,7 @@
                             <h1 class="card-title">204.00€</h1>
                             <p class="card-text">17.00€ <small>/mensuel</small></p>
                         </div>
-                        <p class="text-center"><a href="" class="btn btn-elegant"> Subscribe </a><br> Free 15 Days Trial!</p>
+                        <p class="text-center"><a href="#/ms/signup/5f12c0518385a50004513f1f" class="btn btn-elegant"> Subscribe </a><br> Free 15 Days Trial!</p>
                         <?php include('../plans_page/entreprise.php');?>
                         <div class="paypal-buttons px-2" data-desc="entreprise" data-subs="y" data-value="204.00"></div>
                     </div>
@@ -133,7 +134,7 @@
                             <h1 class="card-title">288.00€</h1>
                             <p class="card-text">24.00€ <small>/mensuel</small></p>
                         </div>
-                        <p class="text-center"><a href="" class="btn btn-elegant"> Subscribe </a><br> Free 15 Days Trial!</p>
+                        <p class="text-center"><a href="#/ms/signup/5f12c0bf169e140004728a67" class="btn btn-elegant"> Subscribe </a><br> Free 15 Days Trial!</p>
                         <?php include('../plans_page/commerce_basic.php');?>
                         <div class="paypal-buttons px-2" data-desc="commercebasic" data-subs="y" data-value="288.00"></div>
                     </div>
@@ -147,7 +148,7 @@
                             <h1 class="card-title">432.00€</h1>
                             <p class="card-text">36.00€ <small>/mensuel</small></p>
                         </div>
-                        <p class="text-center"><a href="" class="btn btn-elegant"> Subscribe </a><br> Free 15 Days Trial!</p>
+                        <p class="text-center"><a href="#/ms/signup/5f12c129dfeab6000466d92e" class="btn btn-elegant"> Subscribe </a><br> Free 15 Days Trial!</p>
                         <?php include('../plans_page/commerce_avance.php');?>
                         <div class="paypal-buttons px-2" data-desc="commerceavance" data-subs="y" data-value="432.00"></div>
                     </div>
