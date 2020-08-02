@@ -12,8 +12,10 @@
 </style>
 <?php
     session_start();
-    print $_GET['sitename'];
-    $_SESSION['site'] = $_GET['sitename'];
+    if (isset($_GET['sitename'])){
+        print $_GET['sitename'];
+        $_SESSION['site'] = $_GET['sitename'];
+    }
 ?>
 <div class="container my-5">
     <div class="row mx-0">
@@ -47,7 +49,7 @@
                             <h1 class="card-title">15.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <p class="text-center"><a href="#/ms/signup/5f187cc6374769000482de6c" class="btn btn-elegant"> Subscribe </a><br>Free 15 Days Trial!</p>
+                        <p class="text-center"><a data-ms-membership="5f26db89d9b4360004cd3f7d" href="signup.php" class="btn btn-elegant"> Subscribe </a><br>Free 15 Days Trial!</p>
                         <?php include('../plans_page/personnel.php');?>
                         <div class="paypal-buttons px-2" data-desc="personel" data-subs="m" data-value="15.00"></div>
                     </div>
@@ -61,7 +63,7 @@
                             <h1 class="card-title">21.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <p class="text-center"><a href="#/ms/signup/5f12bfc68385a50004513f1b" class="btn btn-elegant"> Subscribe </a><br>Free 15 Days Trial!</p>
+                        <p class="text-center"><a data-ms-membership="5f12bfc68385a50004513f1b" href="signup.php" class="btn btn-elegant"> Subscribe </a><br>Free 15 Days Trial!</p>
                         <?php include('../plans_page/entreprise.php');?>
                         <div class="paypal-buttons px-2" data-desc="entreprise" data-subs="m" data-value="21.00"></div>
                     </div>
