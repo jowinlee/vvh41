@@ -12,6 +12,7 @@
 </style>
 <?php
     session_start();
+    print $_GET['sitename'];
     $_SESSION['site'] = $_GET['sitename'];
 ?>
 <div class="container my-5">
@@ -46,7 +47,7 @@
                             <h1 class="card-title">15.00€</h1>
                             <p class="card-text">/mensuel</p>
                         </div>
-                        <p class="text-center"><a href="#/ms/signup/5f12bf948385a50004513f18" class="btn btn-elegant"> Subscribe </a><br>Free 15 Days Trial!</p>
+                        <p class="text-center"><a href="#/ms/signup/5f187cc6374769000482de6c" class="btn btn-elegant"> Subscribe </a><br>Free 15 Days Trial!</p>
                         <?php include('../plans_page/personnel.php');?>
                         <div class="paypal-buttons px-2" data-desc="personel" data-subs="m" data-value="15.00"></div>
                     </div>
@@ -158,3 +159,6 @@
     </div>
 </div>
 <?php include('../general/foot.php');?>
+<script type="text/javascript">
+    
+</script>
