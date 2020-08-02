@@ -8,7 +8,11 @@
 <body>
 
 <?php
-
+  session_start();
+    if (isset($_GET['sitename'])){
+        print "sitename".$_GET['sitename'];
+        $_SESSION['site'] = $_GET['sitename'];
+    }
   //   $siteName = $_GET['site']; 
 
   //   if (isset($siteName)){
@@ -36,7 +40,7 @@
   member["email"]
   member["name"]
   member["id"] //current member id   
-console.log("test",member["email"])
+console.log("test",member["email"]+" "+ member["name"]+" "+ member["id"])
   // member's specific page if set.
   member.memberPage
 
