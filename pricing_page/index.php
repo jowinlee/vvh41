@@ -12,8 +12,10 @@
 </style>
 <?php
     session_start();
-    print $_GET['sitename'];
-    $_SESSION['site'] = $_GET['sitename'];
+    if (isset($_GET['sitename'])){
+        print $_GET['sitename'];
+        $_SESSION['site'] = $_GET['sitename'];
+    }
 ?>
 <div class="container my-5">
     <div class="row mx-0">
