@@ -40,7 +40,7 @@
   member["email"]
   member["name"]
   member["id"] //current member id   
-console.log("test",member["email"]+" "+ member["name"]+" "+ member["id"])
+console.log("test",member["email"]+" "+ member["site-name"]+" "+ member["id"])
   // member's specific page if set.
   member.memberPage
 
