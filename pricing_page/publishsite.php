@@ -1,8 +1,7 @@
 <?php include('../functions/functions.php'); ?>
 <?php
-	session_start(); 	
 
-    $siteName = $_SESSION['site']; 
+    $siteName = $_GET['site']; 
 
     if (isset($siteName)){
 
