@@ -32,8 +32,9 @@ function getResetMail($account,$resetPassLink){
 					<p>Votre nom d\'utilisateur : '.$account.'.</p>
 					<p>Remarque : veuillez mettre à jour votre mot de passe au cours des 30 prochains jours, sinon cette URL expirera.</p>
 					<p>Cordialement,</p>
-					<p>contact@vvhpro.fr</p>
-					<p>Monsieur Guilhem Arnal <br>S.A.S. Virtual Visible Hands <br>Service relation client<br>0630906774</p>
+					
+					<p>Monsieur Mohammed Sheriff SALL </p>
+					<p>Monsieur Guilhem Arnal <br>S.A.S. Virtual Visible Hands <br>Service relation client<br>contact@virtualvisiblehands.com</p>
 				</div>
 			</div>';
 	$mail->Body = $body;

@@ -1,5 +1,6 @@
 <?php
     session_start();
+    print  $_SESSION['site'];
     include('../functions/functions.php');
 ?>
 <?php include('../general/head.php');?>
