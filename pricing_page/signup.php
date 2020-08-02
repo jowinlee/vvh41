@@ -1,7 +1,10 @@
 <?php include('../functions/functions.php'); ?>
 <?php include('../general/head.php'); ?>
 <?php include('../general/header.php'); ?>
-
+<?php
+    session_start();
+    $sitename = $_SESSION['site'];
+?>
 <div class="container">
     <div class="row">
         <div class="col-xs-1 col-sm-3 col-md-3 col-lg-3"></div>
@@ -25,6 +28,14 @@
                                 <div class="md-form">
                                     <input type="password" name="pass" id="pass" class="form-control" data-ms-member="password" required >
                                     <label for="pass">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="md-form">
+                                    <input type="text" name="sitename" id="sitename" class="form-control" data-ms-member="site-name" value="<?php echo $sitename; ?>" required >
+                                    <label for="sitename">Site name</label>
                                 </div>
                             </div>
                         </div>
