@@ -3,7 +3,10 @@
 <?php include('../general/header.php'); ?>
 <?php
     session_start();
+    $_SESSION['site'] = $_SESSION['site'];
+    $_SESSION['account'] = $_SESSION['account'];
     $sitename = $_SESSION['site'];
+    $accountname = $_SESSION['account'];
 ?>
 <div class="container">
     <div class="row">
@@ -18,7 +21,15 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form">
-                                    <input type="email" name="email" id="email" class="form-control" data-ms-member="email" required >
+                                    <input type="text" name="sitename" id="sitename" class="form-control" data-ms-member="site-name" value="<?php echo $sitename; ?>" required >
+                                    <label for="sitename">Site name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="md-form">
+                                    <input type="email" name="email" id="email" class="form-control" data-ms-member="email" value="<?php echo $accountname; ?>" required >
                                     <label for="email">E-mail</label>
                                 </div>
                             </div>
@@ -28,14 +39,6 @@
                                 <div class="md-form">
                                     <input type="password" name="pass" id="pass" class="form-control" data-ms-member="password" required >
                                     <label for="pass">Password</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="md-form">
-                                    <input type="text" name="sitename" id="sitename" class="form-control" data-ms-member="site-name" value="<?php echo $sitename; ?>" required >
-                                    <label for="sitename">Site name</label>
                                 </div>
                             </div>
                         </div>

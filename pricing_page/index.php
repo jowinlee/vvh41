@@ -13,8 +13,8 @@
 <?php
     session_start();
     if (isset($_GET['sitename'])){
-        print $_GET['sitename'];
         $_SESSION['site'] = $_GET['sitename'];
+        $_SESSION['account'] = $_GET['accountname'];
     }
 ?>
 <div class="container my-5">

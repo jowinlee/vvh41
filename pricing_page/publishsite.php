@@ -1,15 +1,15 @@
 <?php include('../functions/functions.php'); ?>
 <?php
 
-    $siteName = $_GET['site']; 
+    $siteName = $_POST['sitename']; 
 
     if (isset($siteName)){
 
-		$mysite = publishSite($siteName);
+		publishSite($siteName);
 
 		if (isset($mysite)){
-			alert('Thank you for publishing your site with us!')
-			header('Location: ' . $mysite);
+			alert('Site Successfully Published!')
+			header('Location: https://www.concepteur-site-web.fr');
 		}
     }else{
 
