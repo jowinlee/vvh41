@@ -14,8 +14,9 @@
 	  	if (empty($siteName)) {
 	    	echo "SiteName is empty";
 	  	} else {
-	  		$sample = publishSite($siteName);
-	    	echo '<a href="'.$sample.'">'.$sample.'</a>';
+	  		publishSite($siteName);
+	  		alert('Site Successfully Published!');
+	    	header('Location: https://createur.virtualvisiblehands.com/home/dashboard/overview/'.$siteName);
 	  	}
 	}
 ?>
