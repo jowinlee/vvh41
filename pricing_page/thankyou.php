@@ -2,6 +2,7 @@
 <?php include('../general/head.php'); ?>
 <?php include('../general/header.php'); ?>
 <?php
+	session_start();
 	if (isset($_SESSION['site'])){
 		$_SESSION['site'] = $_SESSION['site'];
 	    $_SESSION['account'] = $_SESSION['account'];
