@@ -15,8 +15,9 @@
 	    	echo "SiteName is empty";
 	  	} else {
 	  		publishSite($siteName);
-	  		alert('Site Successfully Published!');
-	    	header('Location: https://createur.virtualvisiblehands.com/home/dashboard/overview/'.$siteName);
+	  		//alert('Site Successfully Published!');
+	    	header("Location: https://createur.virtualvisiblehands.com/home/dashboard/overview/". $siteName ."");
+	    	exit();
 	  	}
 	}
 ?>
