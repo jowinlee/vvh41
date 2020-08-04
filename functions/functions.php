@@ -27,6 +27,7 @@
             $ssolink = $output->url . '&asNew=true';
 
             header('Location:' . $ssolink);
+            exit();
 
         } else {
             curl_close($ch);
