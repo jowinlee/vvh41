@@ -21,7 +21,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="md-form">
-                                    <input type="text" name="sitename" id="sitename" class="form-control" data-ms-member="site-name" value="<?php echo $sitename; ?>" required >
+                                    <input type="text" name="sitename" id="sitename" class="form-control" data-ms-member="site-name" value="<?php echo $sitename; ?>" disabled required >
                                     <label for="sitename">Site name</label>
                                 </div>
                             </div>
