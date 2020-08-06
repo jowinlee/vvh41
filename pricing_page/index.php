@@ -71,7 +71,7 @@
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
                     <div class="card">
                         <div class="bg-dark pt-3">
-                            <h3 class="card-title font-weight-bold text-center text-white">Commerce Basic</h3>
+                            <h3 class="card-title font-weight-bold text-center text-white">Ecommerce Basic</h3>
                         </div>
                         <div class="text-center py-3">
                             <h1 class="card-title">28.00€</h1>
@@ -85,7 +85,7 @@
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-2">
                     <div class="card">
                         <div class="bg-dark pt-3">
-                            <h3 class="card-title font-weight-bold text-center text-white">Commerce Avancé</h3> 
+                            <h3 class="card-title font-weight-bold text-center text-white">Ecommerce Avancé</h3> 
                         </div>
                         <div class="text-center py-3">
                             <h1 class="card-title">40.00€</h1>
@@ -161,6 +161,4 @@
     </div>
 </div>
 <?php include('../general/foot.php');?>
-<script type="text/javascript">
-    
-</script>
+
