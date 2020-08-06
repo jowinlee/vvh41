@@ -34,7 +34,8 @@ function getResetMail($account,$resetPassLink){
 					<p>Cordialement,</p>
 					
 					<p>Monsieur Mohammed Sheriff SALL </p>
-					<p>Monsieur Guilhem Arnal <br>S.A.S. Virtual Visible Hands <br>Service relation client<br>contact@virtualvisiblehands.com</p>
+					<p><br>S.A.S. Virtual Visible Hands Service clients<br>contact@virtualvisiblehands.com</p>
+
 				</div>
 			</div>';
 	$mail->Body = $body;
